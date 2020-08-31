@@ -1,0 +1,101 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<main>
+
+  <div class="wrapper">
+
+  <div class="column">
+
+  <%= image_tag "def2.png" ,:style => "width:100px;position:relative;
+  top:0px;left:40px;" %>
+
+<p class="name">
+  <strong>Name:</strong>
+  <%= @professor.name %>
+</p>
+ 
+<p class="department">
+  <strong>Department:</strong>
+  <%= @professor.department %>
+</p>
+
+<p class="position">
+  <strong>Position:</strong>
+  <%= @professor.position %>
+</p>
+
+
+
+ 
+
+
+
+
+
+
+<h2 class="add_a_review">Add a review:</h2>
+<%= form_with(model: [ @professor, @professor.reviews.build ], local: true) do |form| %>
+  <p>
+    <%= form.text_field :body %>
+  </p>
+ 
+  <p>
+  <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview" style="
+  float: left;
+  position: relative;
+  left: 40px;">    
+  </p>
+<% end %>
+
+
+<% if current_user!=nil %>
+  <% pre_like = @professor.likes.find { |like| like.user_id == current_user.id} %>
+  <% pre_dislike = @professor.dislikes.find { |dislike| dislike.user_id == current_user.id} %>
+<% end %>
+
+<% if pre_like %>
+  <%= button_to 'Unlike', professor_like_path(@professor, pre_like), method: :delete, class: "prefButtons" %>
+<% elsif !pre_dislike && current_user!=nil %>
+  <%= button_to 'Like', professor_likes_path(@professor), method: :professor, class: "prefButtons" %>
+  
+<% end %>
+
+<% if current_user!=nil %>
+<% pre_dislike = @professor.dislikes.find { |dislike| dislike.user_id == current_user.id} %>
+<% pre_like = @professor.likes.find { |like| like.user_id == current_user.id} %>
+<% end %>
+
+<% if pre_dislike %>
+  <%= button_to 'Undo Deslike', professor_dislike_path(@professor, pre_dislike), method: :delete, class: "prefButtons" %>
+<% elsif !pre_like && current_user!=nil %>
+  <%= button_to 'Dislike', professor_dislikes_path(@professor), method: :professor, class: "prefButtons" %>
+<% end %>
+
+</div>
+
+
+<div class="review_panel">
+
+
+<h2 class="reviews">Reviews</h2>
+<% @professor.reviews.each do |review| %>
+  <p class="review_body">
+    <strong>Review:</strong>
+    <%= review.body %>
+  </p>
+ 
+ 
+<% end %>
+</div>
+  </div>
+
+ 
+
+
+
+
+<!--<button><a class="button7" style="background-color:#2979FF"><%= link_to 'About', controller: 'main_page' %></a></button>
+-->
+</main>

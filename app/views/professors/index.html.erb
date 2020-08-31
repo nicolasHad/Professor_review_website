@@ -1,0 +1,51 @@
+
+
+
+
+<div class="site-container">
+
+
+
+<main>
+
+<div class="col1">
+<h1 class="indexHeader">List of Professors</h1>
+
+ <div class="searchBar">
+ <form action="/professors" accept-charset="UTF-8" method="get">
+ <input type="text" name="search" id="search" placeholder="Search by name/department">
+  <input type="submit" name="commit" id="btn" value="Search" data-disable-with="Search">
+</form>
+  </div>
+  <p class="searchInfo">Search a professor by name or department and click show to be redirected to the selected professor's reviews<br>
+  Likes and Dislikes indicate how preferable is a professor among students</p>
+  </div>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Department</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+ 
+  <% @professors.each do |professor| %>
+    <tr>
+      <td><%= professor.name %></td>
+      <td><%= professor.department %></td>
+      <td><%= link_to 'Show', professor_path(professor) %></td>
+
+      
+      <td><p><%= professor.likes.count %> <%= (professor.likes.count) == 1 ? 'Like' : 'Likes'%></p></td>
+      <td><p><%= professor.dislikes.count %> <%= (professor.dislikes.count) == 1 ? 'Dislike' : 'Dislikes'%></p></td>
+
+      </tr>
+  <% end %>
+</table>
+</main>
+
+
+</div>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RateTheProf|University professor reviewing</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+
+    <header class="container">
+    
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      
+      <ul class="nav navbar-nav navbar-right">
+      <% if current_user %>
+       <a class="username"> Hi <%= current_user.name %> </a>
+       <li> <%= link_to 'Home', main_page_index_path, class: "logs" %> </li>
+       <li><%= link_to 'Log out', logout_path, method: :delete, class: "logs" %></li>
+       <li><%= link_to 'List of Professors', professors_path, class: "logs" %></li>
+       <li><a class="logs" href="/info">About</a></li>
+     <% else %>
+     <li> <%= link_to 'Home', main_page_index_path, class: "logs" %> </li>
+     <li><%= link_to 'List of Professors', professors_path, class: "logs" %></li> 
+     <li><a class="logs" href="/info">About</a></li>
+     <li><a class="logs" href="/professors/new">New</a></li>
+     <li><a class="login" href="/login">Log in</a></li>
+     <li><a class="signup" href="/users/new">Sign up</a></li> 
+        <% end %>
+      </ul>
+      <h1 class="logo">RateYourProfessor</h1>
+    </div>
+  </nav>
+</header>
+
+<footer>
+<div class="container-fluid">
+<p>Rate your professor 2020 ©</p>
+<%= link_to 'Home', main_page_index_path, class: "bottom_logs" %>
+<%= link_to 'List of Professors', professors_path, class: "bottom_logs" %>
+<a class="bottom_logs" href="/info">About</a>
+<a class="bottom_logs" href="/login">Log in</a>
+<a class="bottom_logs" href="/users/new">Sign up</a>
+</div>
+</footer>
+
+
+    <%= yield %>
+  </body>
+</html>

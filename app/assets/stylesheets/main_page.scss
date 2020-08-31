@@ -1,0 +1,110 @@
+// Place all the styles related to the professors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+
+.logo{color: white;
+  margin-top: 0px;
+  position: relative;
+  bottom: 47px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  margin-top: 205px;
+  font-family: 'MuseoModerno', cursive;
+  width: 75%;
+
+
+}
+
+h1{
+    color: #0066b3;
+    font-family: 'MuseoModerno', cursive;
+    margin-top: 45px;
+    text-align: center;
+
+}
+
+header{
+    width: 1349px;
+    height: 3em;
+    background-color: #0066b3;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.menu_bar{
+    background-color: #414042;
+    position: relative;
+    top: 48px;
+    height: 25px;
+    width: 100%;
+}
+p{
+    text-align: center;
+}
+.searchBar{
+    text-align: center;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0066b3;
+    color: white;
+  }
+
+  
+
+
+  .name{
+    margin-top: 45px;
+  }
+
+  .review_panel{
+    float: right;
+    position: relative;
+    right: 100px;
+    margin-top: 45px;
+    width:40%;
+    
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: #9dd8d8;
+    margin-left: -8px;
+    height: 100vh;
+  }
+
+ 
+
+
+ 

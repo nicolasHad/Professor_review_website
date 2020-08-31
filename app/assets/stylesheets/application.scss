@@ -1,0 +1,396 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+li{
+  font-family: 'MuseoModerno', cursive;
+
+}
+
+header{
+  margin-bottom: -25px;
+}
+
+body{
+  display:flex; 
+  flex-direction:column;
+}
+
+.navbar{
+  width: 118%;
+  left: -102px;
+  border: none;
+  background-color: initial;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+    margin-left: 17em;
+    margin-right: auto;
+    margin-bottom: 20em;
+    margin-top: 6em;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0066b3;
+    color: white;
+  }
+
+  .indexHeader{
+      text-align: center;
+      font-family: 'MuseoModerno', cursive;
+      position: relative;
+      top:20px;
+      color: #fff;
+  }
+
+  .searchBar{
+      text-align: center;
+  }
+
+  input#btn{
+    width: 78px;
+    height: 36px;
+    border: 1px solid transparent;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    top: 21px;
+  }
+
+  #search{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 20px;
+    width: 30%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+    position: relative;
+    top:20px;
+  }
+
+  #search:hover, #search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+  }
+
+  
+
+  .logo{
+    position: relative;
+    font-size: x-large;
+    font-family: 'MuseoModerno', cursive;
+    float: left;
+    bottom: 5px;
+    background: -webkit-linear-gradient(rgb(135, 158, 218), rgb(39, 66, 197));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  h1{
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+
+  }
+
+  h3{
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+  }
+
+  .info{
+    text-align: center;
+    max-width: 60%;
+    font-family: 'MuseoModerno', cursive;
+  }
+
+  .welcomeInfo{
+    max-width: 60%;
+    position: relative;
+    top: 50px;
+    font-size: initial;
+    color: white;
+  }
+
+  .mainPageMain{
+    background-image: url("\mainPageImg.jpg");
+    height: 200px;
+    margin-bottom: 50em;
+  }
+
+  footer{
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #292727;
+    color: white;
+    text-align: center;
+  }
+
+  #search{
+    height: 35px;
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+  }
+
+  html {
+    position: relative;
+    min-height: 100%;
+}
+
+.col1{
+  background-image: url("\mainPageImg.jpg");
+  height: 10em;
+position: relative;
+height:200px;
+
+}
+
+.searchInfo{
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top:30px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+#user_email,#user_name,#user_password,#user_password_confirmation,#session_password,#session_email {
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+
+.newUserBtn{
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	background-color: #2CBBBB;
+	border: 1px solid #27A0A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+.newUserBtn:hover{
+
+  background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+	background-color:#34CACA;
+
+}
+
+.actions{
+  font-family: 'Open Sans Condensed', arial, sans;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+  margin: 50px auto;
+  margin-bottom: 10em;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.actions h2{
+  background-image: url("\mainPageImg.jpg");
+	font-family: 'Open Sans Condensed', sans-serif;
+  color: floralwhite;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+
+.column {
+  float: left;
+  width: 14%;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(84,89,208,1) 0%, rgba(0,212,255,1) 100%);
+  height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30em;
+
+}
+
+.name,.department,.position{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:white;
+  text-align: center;
+
+}
+
+.add_a_review{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:white;
+  text-align: center;
+  font-size: 15px;
+}
+
+#review_body{
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+  
+  text-align: center;
+}
+
+.createReview{
+
+  border:none;
+  background-color: transparent;
+  color:white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align:center;
+float: left;
+position: relative;
+left: 32px;
+
+
+}
+
+
+  .reviews{
+    position: relative;
+    left: 2%;
+    width: 40%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+
+}
+
+.review_body{
+  left: 2%;
+  position: relative;
+  width: 40%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+
+}
+.aboutApp{
+  color: white;
+  height: 3em;
+
+
+}
+
+.wrapper2{
+  background-image: url("\mainPageImg.jpg");
+  margin-bottom: 2em;
+
+}
+
+.banner{
+  color: white;
+  position: relative;
+  bottom:30px;
+  font-size: medium;
+}
+
+.aboutApp a{
+  position: relative;
+  top:25px;
+  text-decoration: none;
+  color:white;
+}
+
+footer p{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:white;
+  opacity: 50%;
+  position: relative;
+  margin-top:30px;
+
+
+}
+
+.bottom_logs{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+padding: 5px;
+color: gray;
+opacity: 50%;
+text-decoration: none;
+}
+.bottom_logs:hover{
+
+  color:white;
+}
+
+.illustrations-wrapper{
+position: relative;
+top:200px;
+
+}
+
+.steps-container{
+  position: relative;
+  top:120px;
+}
+
+.steps-container h3{
+  text-align: center;
+  position: relative;
+  left:20px;
+}
+
+.steps{
+  text-align: center;
+ list-style: none
+}
+.steps a{
+  text-decoration: none;
+  text-decoration-line: none;
+  
+}
