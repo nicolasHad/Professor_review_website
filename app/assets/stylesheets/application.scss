@@ -191,7 +191,7 @@ height:200px;
 
 
 
-#user_email,#user_name,#user_password,#user_password_confirmation,#session_password,#session_email {
+#user_email,#user_name,#user_password,#user_password_confirmation,#session_password,#session_email,#professor_name,#professor_department,#professor_position{
   box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -446,6 +446,12 @@ transition: all 0.4s ease 0s;
   margin-left:auto; 
   margin-right:auto;
   display: block;
+}
+
+.creation-guide{
+  text-align: center;
+  font-family: 'MuseoModerno', cursive;
+  margin-top:5em;
 }
 
 
