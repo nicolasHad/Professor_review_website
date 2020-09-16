@@ -15,32 +15,20 @@
   </div>
 <% end %>
 
+<p class="creation-guide">Professor's status can be found on each professor's profile page in each department's website</p>
 
 
-
-
+<div class="actions">
 <%= form_for @professor, html: { multipart: true } do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
+  <h2>Add a professor</h2>
+  <%= form.text_field :name, placeholder: "Enter professor's name" %> 
+  <%= form.text_field :department, placeholder: "Enter professor's department" %> 
+  <%= form.text_field :position, placeholder: "Enter professor's status" %> 
+  <%= form.submit class: 'newUserBtn' %>
 
-  <p>
-    <%= f.label :department %><br>
-    <%= f.text_field :department %>
-  </p>
-  <p>
-    <%= f.label :position %><br>
-    <%= f.text_field :position %>
-  </p>
-  
-  <p>
-    <%= f.submit %>
-  </p>
+
 <% end %>
-
-
-
+</div>
 
 
   <% end %>
