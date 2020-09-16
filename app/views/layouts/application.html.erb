@@ -1,6 +1,8 @@
 
 
 <%= stylesheet_pack_tag 'src/application', media: 'all'%>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,7 +33,7 @@
      <li> <%= link_to 'Home', main_page_index_path, class: "logs" %> </li>
      <li><%= link_to 'List of Professors', professors_path, class: "logs" %></li> 
      <li><a class="logs" href="/info">About</a></li>
-     <li><a class="logs" href="/professors/new">New</a></li>
+     <li><a class="logs" href="/professors/new">Add a professor</a></li>
      <li><a class="login" href="/login">Log in</a></li>
      <li><a class="signup" href="/users/new">Sign up</a></li> 
         <% end %>

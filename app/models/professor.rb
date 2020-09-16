@@ -23,6 +23,7 @@ class Professor < ApplicationRecord
         
     end
     
+    
 
                    
   
