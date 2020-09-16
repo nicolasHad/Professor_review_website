@@ -439,6 +439,16 @@ border-color: #0066b3 !important;
 transition: all 0.4s ease 0s;
 }
 
+.no_results{
+  text-align: center;
+  max-width: 60%;
+  font-family: 'MuseoModerno', cursive;
+  margin-left:auto; 
+  margin-right:auto;
+  display: block;
+}
+
+
 @media only screen and (min-width: 280px) and (max-width: 1000px){
   .navbar{
     text-align:center;
