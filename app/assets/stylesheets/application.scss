@@ -38,7 +38,6 @@ html,body{
     width: 60%;
     margin-bottom: 20em;
     margin-top: 6em;
-    display: block;
   }
   
   table td, table th {
@@ -303,8 +302,8 @@ height:200px;
   color:white;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   text-align:center;
-position: relative;
-left:20%;
+  position: relative;
+  left:20%;
 
 
 }
@@ -478,7 +477,7 @@ table.center{
 }
 
 .col1{
-  width:134%;
+  width:100%;
 }
 
 
@@ -529,5 +528,6 @@ left: 35%;
   display: inline-block;
   margin-left: -48px;
 }
+
 
 }
