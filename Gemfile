@@ -54,11 +54,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'acts_as_favoritor'
-gem 'bcrypt', '~> 3.1.7'
 gem "paperclip", "~> 6.0.0"
 gem 'rmagick'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'ed25519', '~> 1.2', '< 2.0'
-gem 'bcrypt_pbkdf','~> 1.0', '< 2.0'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+
 
 
