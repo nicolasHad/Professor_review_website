@@ -65,6 +65,7 @@ GEM
     autoprefixer-rails (9.8.6.3)
       execjs
     bcrypt (3.1.15)
+    bcrypt_pbkdf (1.0.1-x64-mingw32)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -100,6 +101,7 @@ GEM
     climate_control (0.2.0)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    ed25519 (1.2.4)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.13.1-x64-mingw32)
@@ -245,6 +247,7 @@ PLATFORMS
 DEPENDENCIES
   acts_as_favoritor
   bcrypt (~> 3.1.7)
+  bcrypt_pbkdf (~> 1.0, < 2.0)
   bootsnap (>= 1.4.2)
   bootstrap-sass (~> 3.3.6)
   byebug
@@ -253,6 +256,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.4)
   capistrano-rbenv (~> 2.1, >= 2.1.4)
   capybara (>= 2.15)
+  ed25519 (~> 1.2, < 2.0)
   jbuilder (~> 2.7)
   paperclip (~> 6.0.0)
   puma (~> 4.1)
