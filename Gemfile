@@ -59,6 +59,6 @@ gem "paperclip", "~> 6.0.0"
 gem 'rmagick'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'ed25519', '~> 1.2', '< 2.0'
-gem 'bcrypt_pbkdf ','~>  1.0', '< 2.0'
+gem 'bcrypt_pbkdf','~>  1.0', '< 2.0'
 
 
