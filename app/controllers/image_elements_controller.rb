@@ -34,4 +34,6 @@ class ImageElementsController < ApplicationController
 
       def image_elements_params
         params.require(:image_element).permit(:image)
+      end
+      
 end
