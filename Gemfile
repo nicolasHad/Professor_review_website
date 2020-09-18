@@ -58,7 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'acts_as_favoritor'
 gem 'bcrypt', '~> 3.1.7'
 gem "paperclip", "~> 6.0.0"
-gem 'rmagick'
 gem 'bootstrap-sass', '~> 3.3.6'
 
 

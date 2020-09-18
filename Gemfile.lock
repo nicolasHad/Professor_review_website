@@ -182,7 +182,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (1.7.1)
-    rmagick (4.1.2)
     rubyzip (2.3.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -267,7 +266,6 @@ DEPENDENCIES
   pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
-  rmagick
   sass-rails (>= 6)
   selenium-webdriver
   sqlite3 (~> 1.4)
