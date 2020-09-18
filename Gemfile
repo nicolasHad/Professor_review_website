@@ -60,4 +60,5 @@ gem "paperclip", "~> 6.0.0"
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'pg', '>= 1.2.3'
+gem 'passenger', '~> 6.0.6'
 
