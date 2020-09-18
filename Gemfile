@@ -36,10 +36,6 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'capistrano', '~> 3.11'
-  gem 'capistrano-rails', '~> 1.4'
-  gem 'capistrano-passenger', '~> 0.2.0'
-  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 end
 
 group :test do
@@ -58,7 +54,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem "paperclip", "~> 6.0.0"
 gem 'rmagick'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'ed25519', '~> 1.2', '< 2.0'
-gem 'bcrypt_pbkdf','~>  1.0', '< 2.0'
+
 
 
