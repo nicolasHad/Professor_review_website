@@ -41,7 +41,6 @@ group :development do
   gem 'capistrano-rails', '~> 1.4'
   gem 'capistrano-passenger', '~> 0.2.0'
   gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
-  gem 'pg', '>= 0.19.0.beta'
 end
 
 group :test do
@@ -60,5 +59,5 @@ gem 'bcrypt', '~> 3.1.7'
 gem "paperclip", "~> 6.0.0"
 gem 'bootstrap-sass', '~> 3.3.6'
 
-
+gem 'pg', '>= 0.19.0.beta'
 
