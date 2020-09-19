@@ -2,12 +2,12 @@
 lock "~> 3.14.1"
 
 set :application, "Project"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@gitlab.com:nicolas_hadjisavvas/personal-project.git"
 
-Deploy to the user's home directory
+# Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads', 'public/packs', 'node_modules'
 
 # Only keep the last 5 releases to save disk space
 set :keep_releases, 5
