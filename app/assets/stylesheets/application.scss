@@ -171,7 +171,7 @@ html,body{
 }
 
 .col1{
-  background-image: url("\mainPageImg.jpg");
+  background-image: image-url('mainPageImg.jpg');
   height: 10em;
 position: relative;
 height:200px;
@@ -243,7 +243,7 @@ height:200px;
 }
 
 .actions h2{
-  background-image: url("\mainPageImg.jpg");
+  background-image: image-url('mainPageImg.jpg');
 	font-family: 'Open Sans Condensed', sans-serif;
   color: floralwhite;
 	font-size: 18px;
@@ -334,7 +334,7 @@ height:200px;
 }
 
 .wrapper2{
-  background-image: url("\mainPageImg.jpg");
+  background-image: image-url('mainPageImg.jpg');
   margin-bottom: 2em;
 
 }
