@@ -55,7 +55,7 @@ Rails.application.configure do
   config.assets.quiet = true
   config.assets.check_precompiled_asset = false
   config.assets.compile = true
-
+  config.assets.enabled = true
   
   config.public_file_server.enabled = true
 
