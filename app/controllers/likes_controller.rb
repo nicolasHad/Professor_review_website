@@ -1,3 +1,4 @@
+# encoding: utf-8
 class LikesController < ApplicationController
     before_action :find_professor
     before_action :find_like, only: [:destroy]
