@@ -59,6 +59,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem "paperclip", "~> 6.0.0"
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'aws-sdk'
 gem 'pg', '>= 1.2.3'
 gem 'passenger', '~> 6.0.6'
 
