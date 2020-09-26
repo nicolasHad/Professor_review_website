@@ -18,6 +18,7 @@ html,body{
   display:flex; 
   flex-direction:column;
   width: 100%;
+  font-size: small;
 
   
 }
@@ -404,8 +405,11 @@ top:200px;
 }
 
 .img_preview{
-  width:300px;position:relative;
-        top:0px;left:40px;margin-left:100px;
+  width:300px;
+  top:0px;
+  position: relative;
+  left:17%;
+  right:0;
 }
 
 .infopar{
@@ -484,7 +488,7 @@ transition: all 0.4s ease 0s;
   }
 
   .img_preview {
-    width: 200px;
+    width:200px;
     display: inline;
     margin-left: 20px;
   }

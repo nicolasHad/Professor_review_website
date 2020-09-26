@@ -21,9 +21,9 @@
 <div class="actions">
 <%= form_for @professor, html: { multipart: true } do |f| %>
   <h2>Add a professor</h2>
-  <%= form.text_field :name, placeholder: "Enter professor's name" %> 
-  <%= form.text_field :department, placeholder: "Enter professor's department" %> 
-  <%= form.text_field :position, placeholder: "Enter professor's status" %> 
+  <%= form.text_field :name, placeholder: "name" %> 
+  <%= form.text_field :department, placeholder: "department" %> 
+  <%= form.text_field :position, placeholder: "status" %> 
   <%= form.submit class: 'newUserBtn' %>
 
 
