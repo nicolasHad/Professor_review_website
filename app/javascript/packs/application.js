@@ -20,3 +20,8 @@ require("channels")
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require_tree .
+
+
+import "bootstrap";
+import "./src/application.scss"
+global.$ = jQuery;
