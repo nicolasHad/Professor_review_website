@@ -26,24 +26,20 @@
   <tr>
     <th>Name</th>
     <th>Department</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Likes/Dislikes ratio</th>
   </tr>
  
   <% if (@professors.empty?) %>
-  <p class="no_results">No results found,because the professor or department name you serached wasn't found.You can add this professor manually.</p>
+  <p class="no_results">No results found,because the professor or department name you searched wasn't found.You can add this professor manually.</p>
   <a class="logs" href="/professors/new">Add a professor</a>
 <% else %>
   <% @professors.each do |professor| %>
     <tr>
-      <td><%= professor.name %></td>
+      <td><a><%= link_to professor.name, professor_path(professor) %></a></td>
       <td><%= professor.department %></td>
-      <td><%= link_to 'Show', professor_path(professor) %></td>
 
       
-      <td><p><%= professor.likes.count %> <%= (professor.likes.count) == 1 ? 'Like' : 'Likes'%></p></td>
-      <td><p><%= professor.dislikes.count %> <%= (professor.dislikes.count) == 1 ? 'Dislike' : 'Dislikes'%></p></td>
+      <td><p><%= professor.likes.count %> <%= (professor.likes.count) == 1 ? 'Like' : 'Likes'%> \ <%= professor.dislikes.count %> <%= (professor.dislikes.count) == 1 ? 'Dislike' : 'Dislikes'%> </p></td>
 
       </tr>
       <% end %>
