@@ -390,8 +390,9 @@ text-decoration: none;
 }
 
 .illustrations-wrapper{
-position: relative;
-top:200px;
+  position: absolute;
+  top: 200px;
+  left: 18%;
 
 }
 
@@ -493,7 +494,7 @@ transition: all 0.4s ease 0s;
     background-image: image-url('mainPageImg.jpg');
     border-radius: 0.3rem;
     height: 25em;
-    margin-top: 18em;
+    margin-top: 25%;
     position: relative;
     width:70%;
     margin-left: auto;
