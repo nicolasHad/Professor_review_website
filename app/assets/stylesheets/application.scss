@@ -2,7 +2,7 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Source+Sans+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap');
 
 li{
   font-family: 'MuseoModerno', cursive;
@@ -112,18 +112,23 @@ html,body{
   .logo{
     position: relative;
     font-size: x-large;
-    font-family: monospace;
+    font-family: 'Alegreya', serif;
     float: left;
     bottom: 5px;
-    background: -webkit-linear-gradient(rgb(135, 158, 218), rgb(39, 66, 197));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color:black;
+    opacity:0.8;
   }
 
 
   h1{
     text-align: center;
     font-family: 'MuseoModerno', cursive;
+
+  }
+  .navbar-nav li{
+    margin-top: 15px;
 
   }
 
@@ -390,9 +395,8 @@ text-decoration: none;
 }
 
 .illustrations-wrapper{
-  position: absolute;
-  top: 200px;
-  left: 18%;
+position: relative;
+top:200px;
 
 }
 
@@ -432,7 +436,6 @@ text-decoration: none;
 }
 .disclaimer{
   text-align: center;
-  margin-bottom:15em;
   max-width: 60%;
   font-family: 'MuseoModerno', cursive;
 }
@@ -494,7 +497,7 @@ transition: all 0.4s ease 0s;
     background-image: image-url('mainPageImg.jpg');
     border-radius: 0.3rem;
     height: 25em;
-    margin-top: 25%;
+    margin-top: 18em;
     position: relative;
     width:70%;
     margin-left: auto;
@@ -559,7 +562,6 @@ transition: all 0.4s ease 0s;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
   border-radius: 0.3rem;
 }
 
@@ -574,6 +576,7 @@ transition: all 0.4s ease 0s;
     }
     .grid-container {
       display: initial;
+      width:20%;
     }
 
   .mainPageMain{
