@@ -22,18 +22,18 @@
   </div>
 
 
-<table class="center">
-  <tr>
-    <th>Name</th>
-    <th>Department</th>
-    <th>Likes/Dislikes ratio</th>
-  </tr>
- 
+
   <% if (@professors.empty?) %>
-  <p class="no_results">No results found,because the professor or department name you searched wasn't found.You can add this professor manually.</p>
-  <a class="logs" href="/professors/new">Add a professor</a>
-<% else %>
-  <% @professors.each do |professor| %>
+    <p class="no_results">No results found,because the professor or department name you searched wasn't found.You can add this professor manually.</p>
+    <a class="logs" href="/professors/new">Add a professor</a>
+  <% else %>
+    <table class="center">
+    <tr>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Likes/Dislikes ratio</th>
+    </tr>
+   <% @professors.each do |professor| %>
     <tr>
       <td><a><%= link_to professor.name, professor_path(professor) %></a></td>
       <td><%= professor.department %></td>
