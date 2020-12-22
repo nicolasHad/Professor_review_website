@@ -381,13 +381,26 @@ footer p{
 
 }
 
+a.add_prof_index {
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #777;
+  font-family: 'MuseoModerno', cursive;
+
+}
+a.add_prof_index:hover{
+  color:black;
+  transition: 1s;
+}
 
 .bottom_logs{
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-padding: 5px;
-color: gray;
-opacity: 50%;
-text-decoration: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;  
+  padding: 5px;
+  color: gray;
+  opacity: 50%;
+  text-decoration: none;
 }
 .bottom_logs:hover{
 
@@ -469,6 +482,7 @@ transition: all 0.4s ease 0s;
   font-family: 'MuseoModerno', cursive;
   margin-left:auto; 
   margin-right:auto;
+  margin-top: 30px;
   display: block;
 }
 
