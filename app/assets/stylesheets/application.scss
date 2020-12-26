@@ -30,6 +30,7 @@ html,body{
   background-color: initial;
 }
 
+
 table.center {
   margin-left:auto; 
   margin-right:auto;
@@ -160,7 +161,7 @@ table th {
   }
 
   footer{
-    height: 120px;
+    height: 150px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -368,13 +369,14 @@ margin-top: -20px;
   color:white;
 }
 
-footer p{
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+.footer-logo{
+  font-family: 'Alegreya', serif;
   color:white;
-  opacity: 50%;
+  font-size: 30px;
+  opacity: 70%;
   position: relative;
   margin-top:30px;
-
+  margin-right: 20em;
 
 }
 
@@ -399,10 +401,14 @@ a.add_prof_index:hover{
   color: gray;
   opacity: 50%;
   text-decoration: none;
+  position: relative;
+  bottom:65px;
+  
 }
 .bottom_logs:hover{
-
+  transition: 1s;
   color:white;
+  text-decoration: none;
 }
 
 .illustrations-wrapper{
