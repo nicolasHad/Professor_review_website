@@ -119,7 +119,6 @@ table th {
     margin-left: 1em;
   }
 
-
   h1{
     text-align: center;
     font-family: 'MuseoModerno', cursive;
@@ -371,13 +370,25 @@ margin-top: -20px;
 
 .footer-logo{
   font-family: 'Alegreya', serif;
-  color:white;
+  color: white;
   font-size: 30px;
   opacity: 70%;
   position: relative;
-  margin-top:30px;
+  margin-top: 30px;
   margin-right: 20em;
 
+}
+.footer-logo:hover{
+  text-decoration: none;
+  color:white;
+}
+.footer-a{
+  text-decoration: none;
+  color: white;
+}
+.footer-a:hover{
+  text-decoration: none;
+  color:white;
 }
 
 a.add_prof_index {
@@ -663,6 +674,16 @@ left: 35%;
 
 .jumbotron{
   height: 55em;
+}
+
+.footer-logo{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+}
+.footer-a{
+  position: relative;
+  top:20px;
 }
 
 }
