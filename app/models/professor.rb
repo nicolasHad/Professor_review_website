@@ -4,7 +4,6 @@ class Professor < ApplicationRecord
     has_many :likes, dependent: :destroy
     has_many :dislikes, dependent: :destroy
 
-    has_one_attached:image_elements
 
 
     validates :name, presence: true,

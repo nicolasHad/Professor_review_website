@@ -1,0 +1,33 @@
+
+<%= form_with scope: :degree, url: degrees_path, local: true do |form| %>
+
+    <% if @degree.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@degree.errors.count, "error") %> prohibited
+        this professor record from being saved:
+      </h2>
+      <ul>
+        <% @degree.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p class="creation-guide">Professor's status can be found on each professor's profile page in each department's website</p>
+  
+  
+  <div class="actions">
+  <%= form_for @degree, html: { multipart: true } do |f| %>
+    <h2>Add a degree</h2>
+    <%= form.text_field :code, placeholder: "code" %> 
+    <%= form.text_field :title, placeholder: "title" %> 
+    <%= form.submit class: 'newUserBtn' %>
+  
+  
+  <% end %>
+  </div>
+  
+  
+    <% end %>

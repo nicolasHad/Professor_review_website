@@ -1,0 +1,11 @@
+<h1>Degrees</h1>
+
+<ul>
+  <% @degree.each do |degree| %>
+    <li>
+      <%= link_to degree.title, degree %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Degree", new_degree_path %>

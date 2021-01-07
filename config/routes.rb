@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'degrees/index'
   get 'sessions/new'
   get 'main_page/index'
   get '/login', to: 'sessions#new'
@@ -10,12 +11,12 @@ Rails.application.routes.draw do
   resources:professors
   resources:info
   resources:users
+  resources:degrees
 
   resources :professors do
     resources :reviews
     resources :likes
     resources :dislikes
-    resources :image_elements
   end
 
   root 'main_page#index'
