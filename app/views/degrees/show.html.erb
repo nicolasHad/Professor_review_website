@@ -1,10 +1,49 @@
-<p>
+
+<main>
+
+<div class="wrapper">
+
+  <div class="column">
+<p class="name">
   <strong>Code:</strong>
   <%= @degree.code %>
 </p>
  
-<p>
+<p  class="department">
   <strong>Title:</strong>
   <%= @degree.title %>
 </p>
 
+
+<h2 class="add_a_review">Add a review:</h2>
+<%= form_with(model: [ @degree, @degree.degree_reviews.build ], local: true) do |form| %>
+  <p>
+    <%= form.text_field :body %>
+  </p>
+ 
+  <p>
+  <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview">    
+  </p>
+<% end %>
+</div>
+
+
+
+<div class="review_panel">
+
+
+<h2 class="reviews">Reviews</h2>
+<% @degree.degree_reviews.each do |degree_review| %>
+  <p class="review_body">
+    <strong>Review:</strong>
+    <%= degree_review.body %>
+  </p>
+ 
+ 
+<% end %>
+
+</div>
+
+</div>
+
+</main>

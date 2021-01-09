@@ -1,5 +1,7 @@
 class Degree < ApplicationRecord
 
+    has_many:degree_reviews
+
     validates :code, presence: true,
             length: { minimum: 2 }
     validates :title, presence: true,

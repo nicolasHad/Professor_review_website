@@ -19,5 +19,9 @@ Rails.application.routes.draw do
     resources :dislikes
   end
 
+  resources :degrees do
+    resources :degree_reviews
+  end
+
   root 'main_page#index'
 end
