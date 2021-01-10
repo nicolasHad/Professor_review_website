@@ -145,8 +145,7 @@ table th {
   .info{
     text-align: center;
     max-width: 60%;
-    font-family: 'MuseoModerno', cursive;
-    
+    font-family: 'Lato', sans-serif;    
   }
 
   .welcomeInfo{
@@ -155,6 +154,7 @@ table th {
     top: 50px;
     font-size: initial;
     color: white;
+    font-family: 'Lato', sans-serif;
   }
 
   .mainPageMain{
@@ -541,7 +541,7 @@ transition: all 0.4s ease 0s;
 }
 .jumbotron-display{
   font-size: 45px;
-  font-family: 'math';
+  font-family: 'Lato', sans-serif;
   float: left;
   padding-left: 15px;
   color: #ddd;
@@ -554,7 +554,7 @@ transition: all 0.4s ease 0s;
 
 }
 .jumbotron p{
-  font-family: 'system-ui';
+  font-family: 'Lato', sans-serif;
   padding-left: 15px;
   color: #fff;
 
@@ -574,8 +574,8 @@ transition: all 0.4s ease 0s;
 
 .card-title{
   font-size: 30px;
-  font-family: 'Heebo', sans-serif;
-  color: #1cb39b;
+  font-family: 'Lato', sans-serif;
+  color: #6c7ae0;
   
 
 }
@@ -615,7 +615,7 @@ transition: all 0.4s ease 0s;
 
   .mainPageMain{
     height: 400px;
-    width: 105%;
+    width: 110%;
     margin-bottom: 190em;
 
   }
@@ -631,7 +631,7 @@ table.center{
 }
 
 .col1{
-  width:100%;
+  width:110%;
 }
 
 
@@ -697,6 +697,9 @@ left: 35%;
   position: relative;
   top:200px;
   display: block;
+  }
+  .wrapper2{
+    width:110%;
   }
 
 }
