@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources:info
   resources:users
   resources:degrees
+  resources:add_records
 
   resources :professors do
     resources :reviews

@@ -27,14 +27,14 @@
        <li><%= link_to 'List of Professors', professors_path, class: "logs" %></li> 
        <li><%= link_to 'List of Degrees', degrees_path, class: "logs" %></li> 
        <li><a class="logs" href="/info">About</a></li>
-       <li><a class="logs" href="/professors/new">Add a professor</a></li>
+       <li><a class="logs" href="/add_records">Add Records</a></li>
        <li><%= link_to 'Log out', logout_path, method: :delete, class: "logs" %></li>
      <% else %>
      <li> <%= link_to 'Home', main_page_index_path, class: "logs" %> </li>
      <li><%= link_to 'List of Professors', professors_path, class: "logs" %></li> 
      <li><%= link_to 'List of Degrees', degrees_path, class: "logs" %></li> 
      <li><a class="logs" href="/info">About</a></li>
-     <li><a class="logs" href="/professors/new">Add a professor</a></li>
+     <li><a class="logs" href="/add_records">Add Records</a></li>
      <li><a class="login" href="/login">Log in</a></li>
      <li><a class="signup" href="/users/new">Sign up</a></li> 
         <% end %>
