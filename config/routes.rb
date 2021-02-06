@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'unimodules/index'
   get 'degrees/index'
   get 'sessions/new'
   get 'main_page/index'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   resources:users
   resources:degrees
   resources:add_records
+  resources:unimodules
 
   resources :professors do
     resources :reviews
@@ -22,6 +24,10 @@ Rails.application.routes.draw do
 
   resources :degrees do
     resources :degree_reviews
+  end
+
+  resources :unimodules do
+    resources :modreviews
   end
 
   root 'main_page#index'

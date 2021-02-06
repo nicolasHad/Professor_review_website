@@ -1,0 +1,58 @@
+
+
+
+
+<div class="site-container">
+
+
+
+<main>
+
+<div class="col1">
+<h1 class="indexHeader">List of Modules</h1>
+
+
+
+<div class="searchBar">
+<form action="/unimodules" accept-charset="UTF-8" method="get">
+<input type="text" name="search" id="search" placeholder="Search by name/department">
+<input type="submit" name="commit" id="btn" value="Search" data-disable-with="Search">
+</form>
+</div>
+<p class="searchInfo">Search a module by code or title and click show to be redirected to the selected module's reviews<br>
+Likes and Dislikes indicate how preferable is a professor among students</p>
+</div>
+
+
+
+<% if (@unimodules.empty?) %>
+<p class="no_results">No results found,because the professor or department name you searched wasn't found.You can add this module manually.</p>
+<a class="add_prof_index" href="/unimodules/new">Add a module</a>
+
+<% else %>
+<table class="center">
+<tr>
+  <th>Code</th>
+  <th>Title</th>
+</tr>
+<% @unimodules.each do |unimodule| %>
+<tr>
+  <td><a><%= link_to unimodule.code, unimodule_path(unimodule) %></a></td>
+  <td><%= unimodule.title %></td>
+
+  
+
+  </tr>
+  <% end %>
+<% end %>
+
+
+
+
+
+</table>
+</main>
+
+
+</div>
+

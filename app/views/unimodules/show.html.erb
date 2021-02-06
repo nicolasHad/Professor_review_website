@@ -1,0 +1,49 @@
+
+<main>
+
+<div class="wrapper">
+
+  <div class="column">
+<p class="name">
+  <strong>Code:</strong>
+  <%= @unimodule.code %>
+</p>
+ 
+<p  class="department">
+  <strong>Title:</strong>
+  <%= @unimodule.title %>
+</p>
+
+
+<h2 class="add_a_review">Add a review:</h2>
+<%= form_with(model: [ @unimodule, @unimodule.modreviews.build ], local: true) do |form| %>
+  <p>
+    <%= form.text_field :body %>
+  </p>
+ 
+  <p>
+  <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview">    
+  </p>
+<% end %>
+</div>
+
+
+
+<div class="review_panel">
+
+
+<h2 class="reviews">Reviews</h2>
+<% @unimodule.modreviews.each do |modreview| %>
+  <p class="review_body">
+    <strong>Review:</strong>
+    <%= modreview.body %>
+  </p>
+ 
+ 
+<% end %>
+
+</div>
+
+</div>
+
+</main>
