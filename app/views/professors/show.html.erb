@@ -35,10 +35,16 @@
 
 
 <h2 class="add_a_review">Add a review:</h2>
-<%= form_with(model: [ @professor, @professor.reviews.build ], local: true) do |form| %>
+<form action="/degrees/1/degree_reviews" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token">
   <p>
-    <%= form.text_field :body %>
+    <input type="text" name="degree_review[body]" id="degree_review_body">
   </p>
+ 
+  <p>
+  <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview">    
+  </p>
+</form>
  
   <p>
   <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview">    
@@ -89,9 +95,4 @@
 
  
 
-
-
-
-<!--<button><a class="button7" style="background-color:#2979FF"><%= link_to 'About', controller: 'main_page' %></a></button>
--->
 </main>
