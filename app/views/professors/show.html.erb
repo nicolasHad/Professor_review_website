@@ -1,5 +1,3 @@
-
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <main>
@@ -27,29 +25,17 @@
 
 
 
- 
-
-
-
-
-
-
 <h2 class="add_a_review">Add a review:</h2>
-<form action="/degrees/1/degree_reviews" accept-charset="UTF-8" method="post">
-  <input type="hidden" name="authenticity_token">
+<%= form_with(model: [ @professor, @professor.reviews.build ], local: true) do |form| %>
   <p>
-    <input type="text" name="degree_review[body]" id="degree_review_body">
+    <%= form.text_field :body %>
   </p>
- 
-  <p>
-  <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview">    
-  </p>
-</form>
  
   <p>
   <input type="submit" name="commit" value="Create Review" data-disable-with="Create Review" class="createReview">    
   </p>
 <% end %>
+
 
 
 <% if current_user!=nil %>
@@ -96,3 +82,5 @@
  
 
 </main>
+
+

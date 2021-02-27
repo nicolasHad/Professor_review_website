@@ -1,7 +1,7 @@
 # encoding: utf-8
 class ReviewsController < ApplicationController
 
-    def create
+  def create
         @professor = Professor.find(params[:professor_id])
         @review = @professor.reviews.create(review_params)
         redirect_to professor_path(@professor)
